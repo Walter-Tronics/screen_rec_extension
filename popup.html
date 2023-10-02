@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Degraphe Video Recorder</title>
+  </head>
+  <body>
+    <div id="root">
+        <header>
+            <div class="brand">
+            <img src="assets/help_logo.svg" width="20" />
+            <h1>HelpMeOut</h1>
+            </div>
+
+            <div class="right_icons">
+            <img src="assets/setting-2.svg" width="20" />
+            <img src="assets/close-circle.svg" width="20" />
+            </div>
+        </header>
+
+
+        <div class="desc">
+            This extension helps you record and share help videos with ease.
+        </div>
+
+
+        <div class="options">
+            <div class="full_screen">
+            <img src="assets/monitor.svg" width="30" />
+            <span>Full screen</span>
+            </div>
+
+            <div class="tab">
+            <img src="assets/tab.svg" width="30" />
+            <span>Current Tab</span>
+            </div>
+        </div>
+
+        <div class="rec_items">
+            <div class="camera">
+            <div class="sub_camera">
+                <img src="assets/video-camera.svg" width="25" />
+                <span>Camera</span>
+            </div>
+
+            <div class="toggle_cam toggle">
+                <div class="ball"></div>
+            </div>
+            </div>
+
+            <div class="audio">
+            <div class="sub_audio">
+                <img src="assets/microphone.svg" width="25" />
+                <span>Audio</span>
+            </div>
+
+            <div class="toggle_audio toggle">
+                <div class="ball"></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="start" id="start_video">Start Recording</div>
+        <button id="stop_video" style="display: none;"></button>
+    </div>
+
+    <script src="./js/popup.js"></script>
+  </body>
+</html>

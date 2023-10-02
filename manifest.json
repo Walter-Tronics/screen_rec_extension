@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "HelpMeOut",
+    "description": "Help out by creating videos on how to get things done and sending out instantly",
+    "version": "1.0.0",
+    "icons": {
+        "128": "/images/icon.png"
+    },
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/icon.png",
+            "32": "/images/icon.png",
+            "128": "/images/icon.png"
+        }
+
+    },
+
+    "host_permissions": [
+        "<all_urls>",
+        "http://*/",
+        "https://*/*"
+    ],
+
+
+    "permissions": [
+        "scripting",
+        "tabs",
+        "activeTab"
+    ]
+}
